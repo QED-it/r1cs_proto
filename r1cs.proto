@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package R1CS.serializer;
+option go_package = "github.com/QED-it/r1cs_proto/gen";
+
+message Constraint {
+  map<int64, int64> a = 1;
+  map<int64, int64> b = 2;
+  map<int64, int64> c = 3;
+}
+
+message ConstraintSystem {
+  repeated string variables = 1;
+  repeated Constraint constraints = 2;
+}
