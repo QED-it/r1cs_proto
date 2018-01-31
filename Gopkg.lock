@@ -3,13 +3,17 @@
 
 [[projects]]
   name = "github.com/golang/protobuf"
-  packages = ["proto"]
+  packages = [
+    "jsonpb",
+    "proto",
+    "ptypes/struct"
+  ]
   revision = "925541529c1fa6821df4e44ce2723319eb2be768"
   version = "v1.0.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "28c1bff851e7cda67e596e3c6815bc25fbc7abfa6112bbbd0c556b7eadd599db"
+  inputs-digest = "37b93e0433aa1d7123bdd8de12c9b3471949aa3ab245d37e9fce1ac482501abf"
   solver-name = "gps-cdcl"
   solver-version = 1

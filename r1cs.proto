@@ -4,9 +4,10 @@ package R1CS.serializer;
 option go_package = "github.com/QED-it/r1cs_proto/gen";
 
 message Constraint {
-  map<int64, int64> a = 1;
-  map<int64, int64> b = 2;
-  map<int64, int64> c = 3;
+  map<int32, int32> a = 1;
+  map<int32, int32> b = 2;
+  map<int32, int32> c = 3;
+  string annotation = 4;
 }
 
 message ConstraintSystem {
